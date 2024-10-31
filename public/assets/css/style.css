@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .2s;
+}
+#private{
+    position: fixed;
+    z-index: 10;
+}
+#clients div{
+    padding: .2rem;
+}
+#clients div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    padding: .2rem;
+    background-color: beige;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+}
+#responsePrivate, #private{
+    z-index: 11;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#responsePrivateInner, #privateInner{
+    position: relative;
+    width: 80vw;
+    max-height: 80vh;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+#closePrivate{
+    top: 3rem;
+    right: 3rem;
+}
+.close{
+    z-index: 12;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background-color: aliceblue;
+    color: rgb(88, 136, 136);
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: .3rem;
+    border-radius: .2rem;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: black;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+#clients{
+    width: 20%;
+}
+#messagesFrame{
+    width: 80%;
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+#messages{
+    width: 100%;
+    
+}
